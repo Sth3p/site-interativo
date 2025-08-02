@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Investigação Forense</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🔍 Perícia Criminal: Caso em Investigação</h1>
+      <div class="hud">
+        <span>❤️ Vidas: <span id="vidas">3</span></span>
+        <span>⭐ Pontos: <span id="pontos">0</span></span>
+        <span>🧾 Evidências: <span id="evidencias">0</span></span>
+      </div>
+    </header>
+
+    <main>
+      <p id="texto">Você chegou à cena do crime. O corpo está no chão da sala. É hora de começar a investigação.</p>
+      <div id="opcoes" class="botoes"></div>
+      <button id="botaoAvancar" disabled>➡️ Avançar</button>
+      <button id="botaoReiniciar" onclick="location.reload()">🔁 Voltar ao início</button>
+    </main>
+
+    <aside>
+      <h2>🧳 Inventário</h2>
+      <div id="inventario" class="inventario"></div>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

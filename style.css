@@ -1,0 +1,110 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #2e2e2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f2f2f2;
+}
+
+.container {
+  width: 900px;
+  max-width: 95vw;
+  background-color: #3a3a3a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.hud span {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+main {
+  width: 100%;
+  background-color: #2f2f2f;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.2);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#texto {
+  margin-bottom: 20px;
+  min-height: 80px;
+}
+
+.botoes button {
+  margin: 8px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #444;
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.botoes button:hover {
+  background-color: #555;
+}
+
+.botoes button.selecionada {
+  border: 2px solid #00ffff;
+  background-color: #222;
+}
+
+#botaoAvancar,
+#botaoReiniciar {
+  margin-top: 20px;
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#botaoAvancar:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+aside {
+  background-color: #1f1f1f;
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.inventario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.inventario .item {
+  background-color: #292929;
+  border: 1px solid #555;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+}
